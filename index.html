@@ -1,24 +1,22 @@
-<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <title>Кликер с гифкой</title>
+  <title>Кликер с Nyan Cat</title>
   <style>
     body {
       font-family: Arial, sans-serif;
       text-align: center;
-      margin-top: 50px;
-      background-color: #222;
+      background: #111;
       color: white;
+      margin-top: 50px;
     }
     button {
       font-size: 24px;
       padding: 10px 20px;
-      margin-top: 20px;
     }
     #score {
       font-size: 36px;
-      margin-top: 20px;
+      margin: 20px 0;
     }
     #gifContainer {
       margin-top: 30px;
@@ -37,48 +35,8 @@
 <button id="clickBtn">Кликни!</button>
 
 <div id="gifContainer">
-  <p>Ты набрал 148 очков!</p>
-  <img src="<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <title>Кликер с гифкой</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
-      background-color: #222;
-      color: white;
-    }
-    button {
-      font-size: 24px;
-      padding: 10px 20px;
-      margin-top: 20px;
-    }
-    #score {
-      font-size: 36px;
-      margin-top: 20px;
-    }
-    #gifContainer {
-      margin-top: 30px;
-      display: none;
-    }
-    #gifContainer img {
-      max-width: 400px;
-      border: 3px solid white;
-    }
-  </style>
-</head>
-<body>
-
-<h1>Кликер</h1>
-<div id="score">Очки: 0</div>
-<button id="clickBtn">Кликни!</button>
-
-<div id="gifContainer">
-  <p>Ты набрал 148 очков!</p>
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWtxbnB0bGI5c3Bld3RzdjZmeWNtYmkycm8xNmN2dmt2YzRmdzZ5eiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/YOUR_GIF_ID/giphy.gif" alt="GIF">
+  <p>Ты набрал 140 очков!</p>
+  <img src="https://upload.wikimedia.org/wikipedia/en/1/12/NyanCat.gif" alt="Nyan Cat">
 </div>
 
 <script>
@@ -91,7 +49,7 @@
     score++;
     scoreDiv.textContent = 'Очки: ' + score;
 
-    if (score === 148) {
+    if (score === 140) {
       gifContainer.style.display = 'block';
     }
   };
@@ -99,25 +57,5 @@
 
 </body>
 </html>
->
-</div>
 
-<script>
-  let score = 0;
-  const button = document.getElementById('clickBtn');
-  const scoreDiv = document.getElementById('score');
-  const gifContainer = document.getElementById('gifContainer');
-
-  button.onclick = () => {
-    score++;
-    scoreDiv.textContent = 'Очки: ' + score;
-
-    if (score === 148) {
-      gifContainer.style.display = 'block';
-    }
-  };
-</script>
-
-</body>
-</html>
 
