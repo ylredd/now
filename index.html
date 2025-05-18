@@ -1,28 +1,123 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-  <title>Моя игра-кликер</title>
+  <meta charset="UTF-8" />
+  <title>Кликер с гифкой</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
-    button { font-size: 24px; padding: 10px 20px; }
-    #score { font-size: 32px; margin-top: 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background-color: #222;
+      color: white;
+    }
+    button {
+      font-size: 24px;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+    #score {
+      font-size: 36px;
+      margin-top: 20px;
+    }
+    #gifContainer {
+      margin-top: 30px;
+      display: none;
+    }
+    #gifContainer img {
+      max-width: 400px;
+      border: 3px solid white;
+    }
   </style>
 </head>
 <body>
 
 <h1>Кликер</h1>
-<button id="clickBtn">Кликни меня!</button>
 <div id="score">Очки: 0</div>
+<button id="clickBtn">Кликни!</button>
+
+<div id="gifContainer">
+  <p>Ты набрал 1488 очков!</p>
+  <img src="<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Кликер с гифкой</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background-color: #222;
+      color: white;
+    }
+    button {
+      font-size: 24px;
+      padding: 10px 20px;
+      margin-top: 20px;
+    }
+    #score {
+      font-size: 36px;
+      margin-top: 20px;
+    }
+    #gifContainer {
+      margin-top: 30px;
+      display: none;
+    }
+    #gifContainer img {
+      max-width: 400px;
+      border: 3px solid white;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Кликер</h1>
+<div id="score">Очки: 0</div>
+<button id="clickBtn">Кликни!</button>
+
+<div id="gifContainer">
+  <p>Ты набрал 1488 очков!</p>
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWtxbnB0bGI5c3Bld3RzdjZmeWNtYmkycm8xNmN2dmt2YzRmdzZ5eiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/YOUR_GIF_ID/giphy.gif" alt="GIF">
+</div>
 
 <script>
   let score = 0;
   const button = document.getElementById('clickBtn');
   const scoreDiv = document.getElementById('score');
+  const gifContainer = document.getElementById('gifContainer');
 
   button.onclick = () => {
     score++;
     scoreDiv.textContent = 'Очки: ' + score;
+
+    if (score === 1488) {
+      gifContainer.style.display = 'block';
+    }
   };
 </script>
 
 </body>
 </html>
+>
+</div>
+
+<script>
+  let score = 0;
+  const button = document.getElementById('clickBtn');
+  const scoreDiv = document.getElementById('score');
+  const gifContainer = document.getElementById('gifContainer');
+
+  button.onclick = () => {
+    score++;
+    scoreDiv.textContent = 'Очки: ' + score;
+
+    if (score === 1488) {
+      gifContainer.style.display = 'block';
+    }
+  };
+</script>
+
+</body>
+</html>
+
